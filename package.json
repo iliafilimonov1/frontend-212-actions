@@ -18,7 +18,7 @@
     "lint:fix": "eslint --fix **/*.{js,jsx,ts,tsx}",
     "editorconfig-check": "editorconfig-checker",
     "build": "parcel index.html",
-    "deploy": "cd dist --archive --compress --delete . iliafilimonov1@dev:/var/www/github.com/iliafilimonov1/dev/"
+    "deploy": "cd dist --archive --compress --delete . iliafilimonov1@frontend-212-actions:/var/www/github.com/iliafilimonov1/frontend-212-actions/"
   },
   "lint-staged": {
     "*.{js,json,html,css,md,yml,yaml,ts,tsx}": "prettier --write",
