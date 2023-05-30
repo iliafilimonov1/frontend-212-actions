@@ -1,0 +1,13 @@
+{
+  "presets": [
+    [
+      "@parcel/babel-preset-env",
+      {
+        "targets": {
+          "chrome": "69"
+        },
+        "corejs": "3.6.9"
+      }
+    ]
+  ]
+}

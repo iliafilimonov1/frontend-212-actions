@@ -1,0 +1,28 @@
+{
+  "name": "github-actions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/babel-preset-env": "^2.8.3",
+    "editorconfig-checker": "^5.0.1",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "serve": "parcel index.html",
+    "lint": "eslint **/*.{js,jsx,ts,tsx}",
+    "lint:fix": "eslint --fix **/*.{js,jsx,ts,tsx}",
+    "editorconfig-check": "editorconfig-checker",
+    "build": "parcel index.html",
+    "deploy": "cd dist --archive --compress --delete . iliafilimonov1@dev:/var/www/github.com/iliafilimonov1/dev/"
+  },
+  "lint-staged": {
+    "*.{js,json,html,css,md,yml,yaml,ts,tsx}": "prettier --write",
+    "{*js,*.md}": "eslint --cache --fix",
+    "*.md": "yaspeller"
+  }
+}
